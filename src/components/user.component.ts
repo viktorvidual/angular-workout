@@ -4,7 +4,6 @@ import { Component, Input } from "@angular/core";
     selector: "app-user",
     template: `
     <p>The user name is {{ name }} from {{ occupation }}<p> 
-    
     `
 })
 

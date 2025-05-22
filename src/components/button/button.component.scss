@@ -1,0 +1,19 @@
+.btn {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #ADD8E6;
+  border: 0;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  background-color: #90c7e0; /* Slightly darker blue */
+}
+
+.btn:active {
+  background-color: #6bb3d2; /* Even darker on click */
+  transform: scale(0.98); /* Subtle "pressed" effect */
+}
