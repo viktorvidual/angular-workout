@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'comments',
@@ -10,5 +10,4 @@ import {Component} from '@angular/core';
     </ul>
   `,
 })
-
 export class CommentsComponent {}
