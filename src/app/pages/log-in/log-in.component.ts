@@ -4,6 +4,7 @@ import { ReactiveFormsModule, FormGroup, FormControl, Validators } from "@angula
 @Component({
     selector: "log-in",
     imports: [ReactiveFormsModule],
+    styleUrls: ["log-in.component.scss"],
     template: `
         <form [formGroup]="profileForm" (ngSubmit)="onSubmit()"> 
             <label>

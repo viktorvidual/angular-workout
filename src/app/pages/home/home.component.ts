@@ -1,5 +1,6 @@
-import { Component } from "@angular/core";
+import { Component, inject } from "@angular/core";
 import { Button, CommentsComponent } from "../../components";
+import { CarService } from "../../services";
 
 @Component({
     selector: "app-home",
@@ -18,6 +19,7 @@ import { Button, CommentsComponent } from "../../components";
             } @loading (minimum 1s) {
             <p>Loading comments...</p>
             }
+            <p>{{ cars }}</p>
         </div>
     `
 })
@@ -25,6 +27,17 @@ import { Button, CommentsComponent } from "../../components";
 export class HomeComponent {
 
   items: string[] = [];
+  cars = ""
+
+  // carService = inject(CarService)
+
+  // constructor() { 
+  //   this.cars = this.carService.getCars().join(" | ")
+  // }
+
+  constructor(private carSerive: CarService){
+    this.cars = this.carSerive.getCars().join(" | ")
+  }
 
   addItem(item: string) {
     this.items.push(item);

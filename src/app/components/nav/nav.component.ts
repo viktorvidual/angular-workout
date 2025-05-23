@@ -13,6 +13,8 @@ import { RouterLink } from "@angular/router";
             <a routerLink="/user">User</a>
 
             <a routerLink="/log-in">Login</a>
+
+            <a routerLink="/pipes">Pipes</a>
         </nav>
     `
 })

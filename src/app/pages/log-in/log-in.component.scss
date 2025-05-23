@@ -1,0 +1,14 @@
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 8px;
+}
+
+label{
+    font-weight: 700;
+}
+
+button{
+    padding: 8px;
+}
